@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    font-family: inherit;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+}
+html, body {
+    position: relative;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+input, textarea, select {
+    -webkit-appearance: value;
+    -moz-appearance: value;
+    appearance: value;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+input[disabled] {
+    @include opacity(0.3);
+    cursor: not-allowed;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ol, ul {
+    list-style: none;
+}
