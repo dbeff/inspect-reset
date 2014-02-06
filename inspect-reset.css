@@ -1,43 +1,52 @@
+/* --------------------------------------------------------
+INSPECT RESET - CSS
+@author name Daniel Beff
+@author email daniel.beff@gmail.com
+@author site http://www.danielbeff.com
+@version 1.0.0
+@licence MIT
+-------------------------------------------------------- */
 * {
+    padding: 0;
     margin: 0;
-    font-family: inherit;
-    outline: none;
+}
+html {
     -webkit-font-smoothing: antialiased;
 }
-html, body {
-    position: relative;
-}
+/* --------------------------------------------------------
+// TYPOGRAPHY
+-------------------------------------------------------- */
 a {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
 }
-h1, h2, h3, h4, h5, h6 {
-    display: block;
-}
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
-
-input, textarea, select {
-    -webkit-appearance: value;
-    -moz-appearance: value;
-    appearance: value;
-}
-textarea {
-    overflow: auto;
-    vertical-align: top;
-}
-input[disabled] {
-    @include opacity(0.3);
-    cursor: not-allowed;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-ol, ul {
+/* --------------------------------------------------------
+// LISTS
+-------------------------------------------------------- */
+nav ul {
     list-style: none;
 }
+/* --------------------------------------------------------
+// FORM
+-------------------------------------------------------- */
+input, textarea, select {
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+input[disabled], textarea[disabled], select[disabled] {
+    cursor: not-allowed;
+}
+/* --------------------------------------------------------
+// TABLE
+-------------------------------------------------------- */
+table {
+    border-collapse: collapse;
+}
+tr, td {
+    vertical-align: middle;
+}
+
