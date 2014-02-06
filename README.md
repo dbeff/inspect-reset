@@ -1,6 +1,8 @@
 inspect-reset
 =============
 
+~~~~~~~~~~~~~~~~~~~~
+
 /* --------------------------------------------------------
 INSPECT RESET - CSS
 @author name Daniel Beff
@@ -52,4 +54,4 @@ table {
 tr, td {
     vertical-align: middle;
 }
-
+~~~~~~~~~~~~~~~~~~~~
