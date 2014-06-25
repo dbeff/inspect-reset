@@ -17,6 +17,7 @@ INSPECT RESET - CSS
 }
 html {
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 /* --------------------------------------------------------
 // TYPOGRAPHY
@@ -54,4 +55,5 @@ table {
 tr, td {
     vertical-align: middle;
 }
+
 ~~~~~~~~~~~~~~~~~~~~
