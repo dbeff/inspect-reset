@@ -11,13 +11,17 @@ INSPECT RESET - CSS
 @version 1.0.0
 @licence MIT
 -------------------------------------------------------- */
-* {
-    padding: 0;
-    margin: 0;
-}
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /*Prevent mobile/tablet text size adjust after orientation change, without disabling user zoom.*/
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
 }
 /* --------------------------------------------------------
 // TYPOGRAPHY
@@ -54,6 +58,16 @@ table {
 }
 tr, td {
     vertical-align: middle;
+}
+/* --------------------------------------------------------
+// EMBEDDED
+-------------------------------------------------------- */
+img {
+  border: 0;
+}
+/* Correct overflow not hidden in IE 9/10/11 */
+svg:not(:root) {
+  overflow: hidden;
 }
 
 ~~~~~~~~~~~~~~~~~~~~
