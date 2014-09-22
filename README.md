@@ -14,14 +14,17 @@ INSPECT RESET - CSS
 html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /*Prevent mobile/tablet text size adjust after orientation change, without disabling user zoom.*/
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+    box-sizing: border-box;
 }
-body{
+
+* {
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
 }
 /* --------------------------------------------------------
 // TYPOGRAPHY
